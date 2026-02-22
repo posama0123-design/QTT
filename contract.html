@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ご契約手続き | 九州電信電話株式会社</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+header {
+    background: #0b2a3d;
+    color: white;
+    padding: 20px 40px;
+}
+nav {
+    background: #123c56;
+    padding: 10px 40px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 14px;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+section {
+    background: white;
+    padding: 30px;
+    border-left: 6px solid #0b2a3d;
+}
+h2 {
+    margin-top: 0;
+    color: #0b2a3d;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 25px;
+    padding: 14px;
+    width: 100%;
+    background: #0b2a3d;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #123c56;
+}
+.notice {
+    font-size: 13px;
+    color: #555;
+    margin-top: 20px;
+}
+footer {
+    background: #0b2a3d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ご契約手続き</h1>
+    <p>九州電信電話株式会社</p>
+</header>
+
+<nav>
+    <a href="index.html">トップ</a>
+    <a href="#">サービス</a>
+    <a href="#">サポート</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>お客様情報の入力</h2>
+
+    <label>お名前</label>
+    <input type="text" placeholder="例：九州 太郎">
+
+    <label>ご住所（九州内）</label>
+    <input type="text" placeholder="例：熊本県荒尾市〇〇町">
+
+    <label>電話番号（連絡用）</label>
+    <input type="tel" placeholder="例：0645-xx-xxxx">
+
+    <label>メールアドレス</label>
+    <input type="email" placeholder="example@qtt.jp">
+
+    <label>ご希望のサービス</label>
+    <select>
+        <option>固定電話</option>
+        <option>モバイル通信</option>
+        <option>光通信サービス</option>
+        <option>複数サービスを同時契約</option>
+    </select>
+
+    <label>設置・利用開始希望日</label>
+    <input type="date">
+
+    <button onclick="submitForm()">契約内容を確認する</button>
+
+    <p class="notice">
+        ※ 本画面は契約受付用の入力画面です。<br>
+        ※ 実際の契約確定は、当社からの連絡後に行われます。
+    </p>
+</section>
+
+</main>
+
+<footer>
+    © Kyushu Telegraph and Telephone Corporation
+</footer>
+
+<script>
+function submitForm() {
+    alert("入力内容を受け付けました。\n後日、九州電信電話株式会社よりご連絡いたします。");
+}
+</script>
+
+</body>
+</html>
